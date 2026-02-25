@@ -19,10 +19,18 @@
   justify-content: center;
   padding: 8px;
   box-sizing: border-box;
+  pointer-events: auto !important; 
+  cursor: pointer;
+}
+
+:global(.swiper-button-next svg),
+:global(.swiper-button-prev svg) {
+  pointer-events: none !important;
 }
 
 :global(.swiper-button-next::after),
 :global(.swiper-button-prev::after) {
   font-size: 10px !important;
   font-weight: bold !important;
+  pointer-events: none !important;
 }
