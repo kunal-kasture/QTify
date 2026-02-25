@@ -4,7 +4,9 @@
 }
 
 .slide {
-  width: auto !important;
+  width: auto; 
+  display: flex;
+  justify-content: center;
 }
 
 :global(.swiper-button-next),
@@ -21,6 +23,7 @@
   box-sizing: border-box;
   pointer-events: auto !important; 
   cursor: pointer;
+  z-index: 10;
 }
 
 :global(.swiper-button-next svg),
@@ -28,9 +31,6 @@
   pointer-events: none !important;
 }
 
-:global(.swiper-button-next::after),
-:global(.swiper-button-prev::after) {
-  font-size: 10px !important;
-  font-weight: bold !important;
-  pointer-events: none !important;
+:global(.swiper-button-disabled) {
+  display: none !important;
 }
