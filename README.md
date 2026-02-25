@@ -1,16 +1,40 @@
-# React + Vite
+# QTify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A music streaming application built using React, Material UI, Swiper, and Axios.
 
-Currently, two official plugins are available:
+- **Live Application**: https://qtify-music.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Top and New Albums sections with Carousel and Grid toggle views
+- Songs section with genre-based filtering (Rock, Pop, Jazz, Blues)
+- Interactive song and album cards with tooltips and follow/like counts
+- Autocomplete search bar to find songs and albums
+- Carousel navigation with smooth swipe and slide transitions
+- Responsive design across desktop, tablet, and mobile devices
+- Feedback modal integration
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React (Vite), React Router, Material UI, Swiper, Axios
+- **Hosting**: Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Local Development
+
+### Prerequisites
+
+- Node.js (v18+)
+
+### Setup
+
+```bash
+npm install
+```
+
+Run the application:
+
+```bash
+npm start
+```
+
+The application will be available at `http://localhost:5173`.

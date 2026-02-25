@@ -9,8 +9,16 @@
   font-weight: 600;
   font-size: 16px;
   min-width: fit-content; 
+  transition: opacity 0.2s ease;
 }
 
 .button:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
 }

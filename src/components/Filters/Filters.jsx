@@ -12,6 +12,9 @@ function Filters({ filters, selectedFilterIndex, setSelectedFilterIndex }) {
       <Tabs
         value={selectedFilterIndex}
         onChange={handleChange}
+        variant="scrollable"
+        scrollButtons="auto"
+        allowScrollButtonsMobile
         indicatorColor="primary"
         TabIndicatorProps={{
           style: { backgroundColor: "var(--color-primary)" },

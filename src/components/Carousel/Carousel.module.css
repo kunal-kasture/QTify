@@ -43,3 +43,10 @@
 :global(.swiper-button-disabled) {
   display: none !important;
 }
+
+@media (max-width: 768px) {
+  :global(.swiper-button-next),
+  :global(.swiper-button-prev) {
+    display: none !important;
+  }
+}

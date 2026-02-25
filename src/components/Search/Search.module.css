@@ -1,28 +1,47 @@
-.search {
-  height: 100%;
-  border-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border: 1px solid black;
-  width: 568px;
-  outline: none;
-  padding-left: 12px;
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
 }
 
 .wrapper {
   display: flex;
   align-items: stretch;
   height: 48px;
+  width: 100%;
+}
+
+.inputWrapper {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+}
+
+.search {
+  height: 100%;
+  border-radius: 8px 0px 0px 8px;
+  border: 1px solid black;
+  width: 100%;
+  outline: none;
+  padding-left: 16px;
+  font-size: 15px;
+  font-family: inherit;
+  box-sizing: border-box;
 }
 
 .searchButton {
   border-radius: 0px 8px 8px 0px;
-  padding: 14px 20px;
-  height: 108%;
+  padding: 0 22px;
+  height: 100%;
   border: 1px solid black;  
   border-left: none;
   cursor: pointer;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .listElement {
@@ -37,4 +56,26 @@
 
 .albumArtists {
   font-size: 12px;
+}
+
+/* Mobile adjustments for 320px, 375px, 425px */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .wrapper {
+    height: 40px;
+    width: 100%;
+  }
+
+  .search {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  .searchButton {
+    padding: 0 14px;
+  }
 }
